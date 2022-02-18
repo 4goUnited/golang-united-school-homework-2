@@ -13,7 +13,7 @@ import "math"
 type mySidesNumber int
 
 const SidesTriangle mySidesNumber = 3
-const SidesSquare mySidesNumber = 3
+const SidesSquare mySidesNumber = 4
 const SidesCircle mySidesNumber = 0
 
 func CalcSquare(sideLen float64, sidesNum mySidesNumber) float64 {
@@ -25,4 +25,5 @@ func CalcSquare(sideLen float64, sidesNum mySidesNumber) float64 {
 	case SidesCircle:
 		return math.Pi * sideLen * sideLen
 	}
+	return 0
 }
